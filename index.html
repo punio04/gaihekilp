@@ -39,29 +39,35 @@
 <body class="p_top animation_true no_touchDevise ready" style="overflow: auto;">
   <main id="main">
     <!-- FV -->
+    <!-- FV -->
     <section class="p-mv" id="mv">
       <picture>
         <source srcset="img/fv.webp" media="(min-width: 768px)" width="1280" height="550" type="image/webp">
         <source srcset="img/fv_sp.webp" media="(max-width: 767px)" width="375" height="500" type="image/webp">
         <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="375" height="500" decoding="async" fetchpriority="high">
       </picture>
-      <a href="#contact" class="cta-button">お問い合わせはこちら</a>
+      <a href="#contact" class="cta-button">
+        <img src="img/mail_icon.png" alt="メールアイコン" class="icon">
+        お問い合わせ<br>はこちら
+        <img src="img/under_icon.png" alt="下矢印アイコン" class="icon">
+      </a>
     </section>
 
 
 
-    <!-- 壁画×謎解きで地域の魅力を最大化する新サービス -->
+
+    <!-- 壁画アート×謎解きで地域の魅力を最大化する新サービス -->
     <section class="p-about l-section" id="a-about">
       <div class="l-inner">
         <div class="p-about__item">
           <hgroup class="c-title p-about__title">
-            <h2 class="c-title__jp">壁画×謎解きで地域の魅力を最大化する新サービス</h2>
+            <h2 class="c-title__jp">壁画アート×謎解きで地域の魅力を最大化する新サービス</h2>
           </hgroup>
           <p class="p-about__text">
-            壁画のテーマや謎解きのストーリーに地域の歴史や文化を取り入れることで、<br>
+            壁画アートのテーマや謎解きのストーリーに地域の歴史や文化を取り入れることで、<br>
             訪れる人々にここでしかできない体験を提供します。<br>
             これにより、満足度の向上や地域の認知度アップが期待できます。<br>
-            また、プロのアーティストによるフォトスポットの制作を通じ、<br>
+            また、プロのアーティストによる壁画アートがフォトスポットとなり通じ、<br>
             観光客自らSNSに投稿することで、効果的な宣伝も見込めます。
           </p>
           <div class="p-about__img">
@@ -224,7 +230,7 @@
                 data-s-e8092b60-c9d1-47c2-a2f8-2cf055084885="" class="sd" alt="観光客が地域内を歩き回る仕掛けを作る図"
                 src="img/merit_icon04.png">
               <div data-s-acd48404-3e1b-4bec-b675-5533b4f8e8e7="" class="richText sd">
-                <h3 data-uid="2eURsQTj" data-time="" id="index_2eURsQTj">壁画が謎解きの要素として<br>
+                <h3 data-uid="2eURsQTj" data-time="" id="index_2eURsQTj">壁画アートが謎解きの要素として<br>
                   活用されることで、<br>
                   観光地としての機能も向上させる。</h3>
               </div>
@@ -261,12 +267,13 @@
         decoding="async" fetchpriority="high">
     </picture>
 
-    <!-- 壁画広告と周遊型謎解きのお客様の声 -->
+    <!-- 壁画アート広告と周遊型謎解きのお客様の声 -->
     <picture>
       <source srcset="img/voice.webp" media="(min-width: 769px)" width="1280" height="550" type="image/webp">
       <source srcset="img/voice_sp.webp" media="(min-width: 768px)" width="1280" height="550">
-      <source srcset="img/voice_sp.webp" media="(max-width: 767px)" width="375" height="500" type="image/webp"><img
-        src="img/voice.webp" alt="壁画広告と周遊型謎解きのお客様の声" width="375" height="500"
+      <source srcset="img/voice_sp.webp" media="(max-width: 767px)" width="375" height="500" type="image/webp">
+      <img
+        src="img/voice.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500"
         decoding="async" fetchpriority="high">
     </picture>
 
@@ -308,7 +315,7 @@
               </dl>
               <dl class="in js-accordion">
                 <dt class="heading js-accordion-toggle">
-                  <h3 class="title"><i class="icon ic-question">Q</i> <span>壁画のサイズはどれくらいになりますか？</span></h3>
+                  <h3 class="title"><i class="icon ic-question">Q</i> <span>壁画アートのサイズはどれくらいになりますか？</span></h3>
                 </dt>
                 <dd class="body js-accordion-panel" style="">
                   <div class="in"><i class="icon ic-answer">A</i>
@@ -343,7 +350,7 @@
     <!-- footer -->
     <div data-s-4712c85f-a611-4754-b9dd-6de0af2d18cd="" class="sd appear">
       <div data-s-1a076c81-6c46-4082-8ad5-5218cf7d60ce="" class="sd appear">
-        <div data-s-ef1f217e-32cd-4e52-bddc-609396be2f26="" class="sd appear">
+        <div data-s-ef1f217e-32cd-4e52-bddc-609396be2f26="" class="sd appear footerfont">
           <p data-s-adaed465-c9b2-4a12-8372-6578f2cd9dac=""
             data-r-0_0_1_23_bef3f6da-b5fa-4ff6-8590-4caf923d27fb_adaed465-c9b2-4a12-8372-6578f2cd9dac=""
             class="text sd appear">copyright(c) haregake</p>
@@ -352,20 +359,37 @@
     </div>
   </main>
 
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('.js-accordion-toggle').forEach(item => {
-        item.addEventListener('click', function () {
-          this.classList.toggle('active');
-          let panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
+        const accordions = document.querySelectorAll(".js-accordion-toggle");
+
+        accordions.forEach((accordion) => {
+          accordion.addEventListener("click", function () {
+            // すべてのパネルを閉じる
+            document.querySelectorAll(".js-accordion-panel").forEach((panel) => {
+              if (panel !== this.nextElementSibling) {
+                panel.style.maxHeight = null;
+                panel.parentElement.classList.remove("__expand");
+                panel.previousElementSibling.classList.remove("active");
+              }
+            });
+
+            // クリックしたパネルを開閉
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+              this.classList.remove("active");
+              panel.parentElement.classList.remove("__expand");
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+              this.classList.add("active");
+              panel.parentElement.classList.add("__expand");
+            }
+          });
         });
       });
-    });
+
   </script>
 
   <script src="assets/js/vendor.js"></script>
