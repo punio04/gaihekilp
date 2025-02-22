@@ -3644,28 +3644,29 @@ img {
 }
 
 .content-faq>.in.__expand {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, .08)
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
 }
 
 .content-faq>.in.__expand .ic-question {
   background: #ffad2f;
-  color: #fff
+  color: #fff;
 }
 
 .content-faq>.in.__expand .heading .title {
-  background: #fbf9ef
+  background: #fbf9ef;
 }
 
 .content-faq>.in.__expand .heading:before {
   content: "";
   background: #ffad2f;
-  transform: translateZ(0) rotate(-45deg)
+  transform: translateZ(0) rotate(-45deg);
+  z-index: 10;
 }
 
 .content-faq>.in.__expand .heading:after {
   content: "";
   background: #ffad2f;
-  transform: translateZ(0) rotate(-135deg)
+  transform: translateZ(0) rotate(-135deg);
 }
 
 .content-faq>.in.__expand .heading {
