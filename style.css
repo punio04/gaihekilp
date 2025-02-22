@@ -3657,11 +3657,17 @@ img {
 }
 
 .content-faq>.in.__expand .heading:before {
+  content: "";
   background: #ffad2f;
   transform: translateZ(0) rotate(-45deg)
 }
 
 .content-faq>.in.__expand .heading:after {
+  content: "";
   background: #ffad2f;
   transform: translateZ(0) rotate(-135deg)
+}
+
+.content-faq>.in.__expand .heading {
+  position: relative;
 }
