@@ -2854,17 +2854,20 @@ html[lang=ja] {
   width: 18px;
   height: 2px;
   background: #ffc72e;
-  transition: all .16s cubic-bezier(.4, 0, .2, 1) 0s
+  transition: all .16s cubic-bezier(.4, 0, .2, 1) 0s;
+  z-index: 10;
 }
 
 .content-faq .heading:before {
   transform: translateZ(0);
-  transform-origin: center center
+  transform-origin: center center;
+  z-index: 10;
 }
 
 .content-faq .heading:after {
   transform: translateZ(0) rotate(-90deg);
-  transform-origin: center center
+  transform-origin: center center;
+  z-index: 10;
 }
 
 .content-faq .heading .title {
@@ -2873,7 +2876,7 @@ html[lang=ja] {
   padding: 20px 64px 20px 20px;
   background: #fff;
   color: #2d2d2d;
-  font-size: 1.8rem
+  font-size: 1.8rem;
 }
 
 .content-faq .heading .title .icon {
