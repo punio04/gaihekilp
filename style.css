@@ -123,6 +123,7 @@ body {
 @media only screen and (min-width: 768px) {
   .c-title__jp {
     font-size: 36px;
+    line-height: normal;
   }
 }
 
@@ -192,11 +193,6 @@ body {
   font-size: 12px !important;
 }
 
-
-
-
-
-
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(https://fonts.googleapis.com/earlyaccess/hannari.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Abel");
@@ -244,7 +240,6 @@ html {
   font-size: 62.5%;
 }
 
-
 html,
 body {
   width: 100%;
@@ -274,33 +269,6 @@ body {
 body.ready {
   visibility: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 html,
 body,
@@ -359,8 +327,6 @@ body {
   }
 }
 
-@meda (max-width: 360px) {}
-
 body {
   color: #222;
   font-size: 14px;
@@ -393,8 +359,6 @@ p {
     content: "sp";
   }
 }
-
-
 
 /* CTA */
 @font-face {
@@ -493,50 +457,6 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, .15)
 }
 
-/* ボタン全体 */
-
-/* ボタンホバー時 */
-
-/* テキスト */
-
-/* ボタンの右端の白い円 */
-
-/* 三角形 */
-
-/* ホバー時に三角を緑に変更 */
-
-/* ホバー時に矢印を右へスライド */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sd[data-s-4712c85f-a611-4754-b9dd-6de0af2d18cd] {
   align-content: center;
@@ -619,28 +539,9 @@ a {
 
 @media screen and (max-width: 540px) {
   .sd[data-s-1a076c81-6c46-4082-8ad5-5218cf7d60ce] {
-    padding: 20px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* よくある質問 */
 @charset "UTF-8";
@@ -751,11 +652,6 @@ body {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 767px) {
-  .c-title__jp {
-    font-size: 22px;
-  }
-}
 
 @media only screen and (min-width: 768px) {
   .c-title__jp {
@@ -764,32 +660,11 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 768px) {
+  .c-title__jp {
+    font-size: 20px;
+  }
+}
 
 .clients {
   padding: 50px 0;
@@ -837,13 +712,6 @@ body {
   text-align: right;
 }
 
-
-
-
-
-
-
-
 .clients {
   padding: 0 0 60px 0;
 }
@@ -869,8 +737,6 @@ body {
   border-radius: 20px;
   font-size: 18px;
 }
-
-/* NOMAL ART COMPANYのタイトルを左寄せ */
 
 /* ロゴ全体の白背景を統一 */
 .clients__logos-wrapper {
@@ -919,30 +785,6 @@ body {
   flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .sd[data-s-dfd65a09-e748-4ab8-af95-ca0a8f391f2a] {
   align-content: center;
   align-items: center;
@@ -966,8 +808,6 @@ body {
   /* 他の要素のz-indexを無効化 */
 }
 
-
-
 .sd[data-s-dfd65a09-e748-4ab8-af95-ca0a8f391f2a]::before {
   content: "";
   position: absolute;
@@ -987,13 +827,11 @@ body {
   /* 一番下に配置 */
   opacity: 1;
   /* 透明度の調整 */
-
-
 }
 
 @media screen and (max-width: 840px) {
   .sd[data-s-dfd65a09-e748-4ab8-af95-ca0a8f391f2a] {
-    padding: 24px 0px 120px 0px;
+    padding: 50px 0px 70px 0px;
     --gap-h-dfd65a09-e748-4ab8-af95-ca0a8f391f2a: 0px;
     --gap-v-dfd65a09-e748-4ab8-af95-ca0a8f391f2a: 16px;
   }
@@ -1001,7 +839,7 @@ body {
 
 @media screen and (max-width: 540px) {
   .sd[data-s-dfd65a09-e748-4ab8-af95-ca0a8f391f2a] {
-    padding: 24px 0px 56px 0px;
+    padding: 24px 0px 45px 0px;
     --gap-h-dfd65a09-e748-4ab8-af95-ca0a8f391f2a: 0px;
     --gap-v-dfd65a09-e748-4ab8-af95-ca0a8f391f2a: 16px;
   }
@@ -1135,7 +973,6 @@ body {
   text-align: center;
   position: relative;
 }
-
 
 /* 「・」の位置調整 */
 .sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030] .dots {
@@ -1610,7 +1447,7 @@ body {
 
 @media screen and (max-width: 840px) {
   .sd[data-s-add87fdb-1bff-4ac1-b2d7-f6bff73e78de] {
-    padding: 80px 0px 120px 0px;
+    padding: 70px 0px 70px 0px;
     --gap-h-add87fdb-1bff-4ac1-b2d7-f6bff73e78de: 0px;
     --gap-v-add87fdb-1bff-4ac1-b2d7-f6bff73e78de: 16px;
   }
@@ -1618,7 +1455,7 @@ body {
 
 @media screen and (max-width: 540px) {
   .sd[data-s-add87fdb-1bff-4ac1-b2d7-f6bff73e78de] {
-    padding: 56px 0px 80px 0px;
+    padding: 45px 0px 45px 0px;
     --gap-h-add87fdb-1bff-4ac1-b2d7-f6bff73e78de: 0px;
     --gap-v-add87fdb-1bff-4ac1-b2d7-f6bff73e78de: 16px;
   }
@@ -2023,15 +1860,6 @@ body {
   outline: 2px solid black;
 }
 
-
-
-
-
-
-
-
-
-
 /*! * Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) * Copyright 2023 Fonticons, Inc. */
 .fa-solid {
   -moz-osx-font-smoothing: grayscale;
@@ -2075,26 +1903,6 @@ body {
 .fa-circle:before {
   content: "\f111";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sd {
   flex-wrap: nowrap;
@@ -2172,27 +1980,6 @@ body {
   font-weight: 900
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @font-face {
   font-family: grandam;
   font-style: normal;
@@ -2207,8 +1994,6 @@ body {
   src: url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.eot);
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.woff2) format("woff2"), url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.woff) format("woff"), url(https://storage.googleapis.com/production-os-assets/assets/material-icons/1629704621943/MaterialIcons-Regular.ttf) format("truetype")
 }
-
-
 
 body,
 div,
@@ -2246,18 +2031,6 @@ summary:focus:not(:focus-visible) {
 button:focus:not(:focus-visible) {
   outline: none
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* cta */
 @charset "utf-8";
@@ -2336,9 +2109,6 @@ p {
   }
 }
 
-/*	heading
-------------------------------------------*/
-
 /*	cv_btnArea
 ------------------------------------------*/
 .cv_wrap {
@@ -2355,7 +2125,7 @@ p {
 
 .cv_btnArea>[class*="cv_btn"] {
   width: 48%;
-  max-width: 400px;
+  max-width: 470px;
 }
 
 .cv_btn_balloon {
@@ -2397,10 +2167,10 @@ p {
 .cv_btn01 a {
   position: relative;
   display: block;
-  padding: 26px 30px;
+  padding: 40px 30px;
   border-radius: 60px;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(125, 55, 4, 0.26);
   line-height: 1.4;
@@ -2480,15 +2250,6 @@ p {
     font-size: 1.3rem;
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* よくある質問 */
 @-ms-viewport {
@@ -2978,7 +2739,7 @@ html[lang=ja] {
   }
 
   .section-header>.title {
-    font-size: 2.4rem
+    font-size: 20px;
   }
 
   .section-header>.subtitle {
@@ -3122,7 +2883,7 @@ html[lang=ja] {
 .content-faq .body>.in {
   display: flex;
   align-items: baseline;
-  padding: 20px 40px 40px 20px;
+  padding: 20px 40px 20px 20px;
   color: #2d2d2d;
   font-size: 1.6rem;
   letter-spacing: .016em;
@@ -3135,8 +2896,13 @@ html[lang=ja] {
 
 @media (max-width: 600px) {
   .content-faq .heading .title {
-    padding: 12px 48px 12px 12px;
-    font-size: 1.5rem
+    padding: 18px 48px 18px 12px;
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .in p {
+    font-size: 15px;
   }
 
   .content-faq .body>.in {
@@ -3167,57 +2933,15 @@ html[lang=ja] {
   transition: max-height .32s cubic-bezier(.86, 0, .07, 1) 0s
 }
 
-
-
-
-
-
-
-
-
-
-
 @media (hover: hover) {
   .content-faq>.in .heading .title:hover {
     background: #fefdfa
   }
 }
 
-.content-faq>.in.__expand {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, .08)
-}
-
-.content-faq>.in.__expand .ic-question {
-  background: #ffad2f;
-  color: #fff
-}
-
-.content-faq>.in.__expand .heading .title {
-  background: #fbf9ef
-}
-
-.content-faq>.in.__expand .heading:before {
-  background: #ffad2f;
-  transform: translateZ(0) rotate(-45deg)
-}
-
-.content-faq>.in.__expand .heading:after {
-  background: #ffad2f;
-  transform: translateZ(0) rotate(-135deg)
-}
-
-
-
-
-
-
-
-
 p {
   line-height: normal;
 }
-
-
 
 a {
   pointer-events: auto !important;
@@ -3233,41 +2957,39 @@ a {
   cursor: pointer !important;
 }
 
-
-
-
-
-
-
-css a,
-[onclick] {
-  cursor: pointer !important;
+.cta-button .icon {
+  width: 30px;
+  height: 30px;
 }
 
+.cta-button img:last-child {
+  margin-bottom: -15px;
+  margin-top: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* レスポンシブデザインの改善 */
+.cta-button {
+  position: absolute;
+  right: 14%;
+  bottom: 40%;
+  width: 200px;
+  height: 200px;
+  padding: 20px 20px;
+  line-height: normal;
+  box-shadow: 0px 8px 2px #ac6633;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  transform: translateX(-50%);
+  font-size: 25px;
+  background: linear-gradient(180deg, #ffb84d 0%, #ff8c00 100%);
+}
 
 /* 基本的なスタイルリセット */
 html,
@@ -3350,14 +3072,146 @@ img {
   transition: max-height 0.3s ease-out;
 }
 
-.js-accordion-toggle.active+.js-accordion-panel {
-  max-height: 500px;
+.sp {
+  display: none;
 }
 
+.pc {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .p-about__text {
+    align-self: start;
+    grid-area: text;
+    font-size: 18px;
+    line-height: 1.7;
+    width: 450px;
+    font-weight: bold;
+  }
+
+  .p-about__img {
+    grid-area: img;
+    top: -20px;
+    width: 205%;
+    right: 144px;
+  }
+
+  .clients__logos img {
+    height: 100px;
+  }
+
+  .section-faq>.in {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin-left: 21vw;
+    margin-right: 21vw;
+  }
+
+  .content-faq .heading .title {
+    line-height: normal;
+  }
+
+  .cta-button img:last-child {
+    margin-bottom: -5px;
+    margin-top: 10px;
+  }
+
+  .cta-button .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cta-button {
+    position: absolute;
+    right: 13%;
+    bottom: 39%;
+    width: 160px;
+    height: 160px;
+    padding: 20px 10px;
+    line-height: normal;
+    box-shadow: 0px 6px 2px #ac6633;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transform: translateX(-50%);
+    font-size: 22px;
+    background: linear-gradient(180deg, #ffb84d 0%, #ff8c00 100%);
+  }
+}
 
 @media only screen and (max-width: 768px) {
+
+  .clients__logos img {
+    width: 120px;
+    height: auto;
+  }
+
+  .section-faq>.in {
+    padding-top: 110px;
+    padding-bottom: 70px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+  .cta-button {
+    position: absolute;
+    right: -4%;
+    bottom: 39%;
+    background-color: #f90;
+    color: #fff;
+    width: 180px;
+    height: 180px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 23px;
+    text-align: center;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .cta-button img:last-child {
+    margin-bottom: -12px;
+    margin-top: 12px;
+  }
+
+  .cta-button .icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .clients__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .c-title__jp {
+    font-size: 28px;
+  }
+
   .cv_btnArea a {
     padding: 32px 15px;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .pc {
+    display: none;
   }
 
   .cv_btn01 a {
@@ -3378,17 +3232,21 @@ img {
   .c-title__jp {
     font-weight: bold;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.7;
     padding-bottom: 30px;
   }
 
   .p-about__text {
     align-self: start;
     grid-area: text;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7;
     width: fit-content;
     font-weight: bold;
+  }
+
+  .richText h3 {
+    font-size: 16px;
   }
 
   .p-about__img {
@@ -3430,7 +3288,7 @@ img {
   }
 
   .clients__title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 6px;
   }
@@ -3524,29 +3382,7 @@ img {
     max-width: calc(70% - (var(--gap-h-c7044f22-e9b6-4aa5-b02a-b7944685d2c6) * 0.3));
   }
 
-  .cta-button {
-    position: absolute;
-    right: -2%;
-    bottom: 42%;
-    width: 160px;
-    height: 160px;
-    padding: 10px 5px;
-    line-height: normal;
-    box-shadow: 0px 8px 2px #ac6633;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 20px;
-    text-decoration: none;
-    transform: translateX(-50%);
-    font-size: 21px;
-    background: linear-gradient(180deg, #ffb84d 0%, #ff8c00 100%);
-  }
+
 
   .cta-button .icon {
     width: 22px;
@@ -3565,9 +3401,25 @@ img {
   }
 
   .clients__title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 6px;
+  }
+
+  .clients__tag {
+    background-color: #f4a200;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .richText h3 {
+    font-size: 14px;
+  }
+
+  .sd[data-s-ab2bfadf-9a8f-4b93-857a-5ffeb73e3b23] {
+    padding: 20px 20px;
   }
 
   .sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030] .dots {
@@ -3593,104 +3445,55 @@ img {
   }
 }
 
-
-
 /* FV_CTA */
 .p-mv {
   position: relative;
 }
-
-.cta-button {
-  position: absolute;
-  right: 9%;
-  bottom: 43%;
-  width: 200px;
-  height: 200px;
-  padding: 20px 20px;
-  line-height: normal;
-  box-shadow: 0px 8px 2px #ac6633;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 20px;
-  text-decoration: none;
-  transform: translateX(-50%);
-  font-size: 25px;
-  background: linear-gradient(180deg, #ffb84d 0%, #ff8c00 100%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cta-button .icon {
-  width: 30px;
-  height: 30px;
-}
-
-.cta-button img:last-child {
-  margin-bottom: -15px;
-  margin-top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .p-mv a:hover {
   background: linear-gradient(180deg, #ee6600 0%, #ee6600 100%);
   opacity: 0.93;
 }
 
-@media (max-width: 767px) {
-  .cta-button {
-    position: absolute;
-    right: 9%;
-    bottom: 42%;
-    background-color: #f90;
-    color: #fff;
-    width: 116px;
-    height: 116px;
-    padding: 20px 20px;
-    border-radius: 10px;
-    font-weight: bolder;
-    font-size: 14px;
-    text-align: center;
-    line-height: normal;
-    box-shadow: 3px 3px 10px rgb(146 94 9);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-}
-
 @media (max-width: 425px) {
+
+  .cv_wrap {
+    padding: 45px 0 45px;
+  }
+
+  .sd[data-s-5fbcf82b-4e4a-4238-bfab-28591e9a82e7] {
+    border-radius: 0;
+    flex: none;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    width: calc(45% - (var(--gap-h-c7044f22-e9b6-4aa5-b02a-b7944685d2c6) * 0.3));
+    max-width: calc(45% - (var(--gap-h-c7044f22-e9b6-4aa5-b02a-b7944685d2c6) * 0.3));
+  }
+
+  .sd[data-s-e8092b60-c9d1-47c2-a2f8-2cf055084885] {
+    border-radius: 0;
+    flex: none;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    width: calc(45% - (var(--gap-h-ab2bfadf-9a8f-4b93-857a-5ffeb73e3b23) * 0.3));
+    max-width: calc(45% - (var(--gap-h-ab2bfadf-9a8f-4b93-857a-5ffeb73e3b23) * 0.3));
+  }
+
+  .p-about__text {
+    align-self: start;
+    grid-area: text;
+    font-size: 14px;
+    line-height: 1.7;
+    width: fit-content;
+    font-weight: bold;
+  }
+
+  .c-title__jp {
+    font-size: 20px;
+    line-height: 1.7;
+    padding-bottom: 20px;
+  }
+
   .cta-button {
     position: absolute;
     right: -6%;
@@ -3723,12 +3526,20 @@ img {
     margin-top: 10px;
   }
 
+  .cv_btn01 a {
+    font-size: 20px;
+  }
+
   .section-faq>.in {
     height: auto;
-    padding-top: 56px;
+    padding-top: 85px;
     padding-bottom: 45px;
     margin: auto 5vw;
     max-width: none;
+  }
+
+  .sd[data-s-c7044f22-e9b6-4aa5-b02a-b7944685d2c6] {
+    padding: 20px 20px;
   }
 
   .section-faq .section-header {
@@ -3746,9 +3557,14 @@ img {
 }
 
 @media (max-width: 375px) {
+
+  .cv_btn01 a {
+    font-size: 16px;
+  }
+
   .cta-button {
     position: absolute;
-    right: -6%;
+    right: -10%;
     bottom: 38%;
     background-color: #f90;
     color: #fff;
@@ -3771,4 +3587,73 @@ img {
   .section-faq .section-header {
     margin-bottom: 40px;
   }
+}
+
+@media (max-width: 320px) {
+  .cta-button img:last-child {
+    margin-bottom: -4px;
+    margin-top: 7px;
+  }
+
+  .cta-button .icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .cta-button {
+    position: absolute;
+    right: -10%;
+    bottom: 37%;
+    background-color: #f90;
+    color: #fff;
+    width: 104px;
+    height: 104px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 13px;
+    text-align: center;
+    line-height: normal;
+    box-shadow: 0px 4px 2px #ac6633;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .section-faq>.in {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    margin: auto 5vw;
+    max-width: none;
+  }
+
+  .section-faq .section-header {
+    margin-bottom: 28px;
+  }
+}
+
+.content-faq>.in.__expand {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .08)
+}
+
+.content-faq>.in.__expand .ic-question {
+  background: #ffad2f;
+  color: #fff
+}
+
+.content-faq>.in.__expand .heading .title {
+  background: #fbf9ef
+}
+
+.content-faq>.in.__expand .heading:before {
+  background: #ffad2f;
+  transform: translateZ(0) rotate(-45deg)
+}
+
+.content-faq>.in.__expand .heading:after {
+  background: #ffad2f;
+  transform: translateZ(0) rotate(-135deg)
 }
