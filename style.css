@@ -2911,6 +2911,14 @@ html[lang=ja] {
   }
 }
 
+@media (max-width: 450px) {
+  .content-faq .heading .title {
+    padding: 18px 65px 18px 12px;
+    font-size: 15px;
+    line-height: normal;
+  }
+}
+
 @media (min-width: 1441px) {
   .content-faq .heading .title {
     font-size: 2rem
@@ -3485,7 +3493,7 @@ img {
     font-size: 14px;
     line-height: 1.7;
     width: fit-content;
-    font-weight: bold;
+    font-weight: normal;
   }
 
   .c-title__jp {
