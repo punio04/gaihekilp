@@ -966,7 +966,7 @@ body {
 }
 
 /* 「お悩み」の直上に「・・・」を配置 */
-.sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030] h2 {
+.sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030] h1 {
   font-size: 36px;
   font-weight: 700;
   margin: 0;
@@ -999,14 +999,14 @@ body {
   border-radius: 2px;
 }
 
-.sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030]>h2 {
+.sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030]>h1 {
   font-size: 36px;
   font-weight: 700;
   margin: 0px 0px 0px 0px;
 }
 
 @media screen and (max-width: 840px) {
-  .sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030]>h2 {
+  .sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030]>h1 {
     font-size: 28px;
   }
 }
@@ -1017,7 +1017,7 @@ body {
     margin: 0px 0px 0px 0px;
   }
 
-  .sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030]>h2 {
+  .sd[data-s-86c2e2a3-3c41-493e-a7e6-414881fe7030]>h1 {
     font-size: 20px;
   }
 }
@@ -1579,7 +1579,7 @@ body {
   max-width: 100%;
 }
 
-.sd[data-s-54aafd12-92f5-4105-b3a3-90d799541e59]>h2 {
+.sd[data-s-54aafd12-92f5-4105-b3a3-90d799541e59]>h1 {
   font-size: 36px;
   font-weight: 700;
   margin: 0px 0px 0px 0px;
@@ -1595,7 +1595,7 @@ body {
     font-size: 28px;
   }
 
-  .sd[data-s-54aafd12-92f5-4105-b3a3-90d799541e59]>h2 {
+  .sd[data-s-54aafd12-92f5-4105-b3a3-90d799541e59]>h1 {
     font-size: 28px;
   }
 }
@@ -1606,7 +1606,7 @@ body {
     margin: 0px 0px 0px 0px;
   }
 
-  .sd[data-s-54aafd12-92f5-4105-b3a3-90d799541e59]>h2 {
+  .sd[data-s-54aafd12-92f5-4105-b3a3-90d799541e59]>h1 {
     font-size: 20px;
   }
 }
@@ -1945,7 +1945,7 @@ body {
   word-break: break-word
 }
 
-.richText h2,
+.richText h1,
 .richText h3,
 .richText strong {
   backface-visibility: visible;
@@ -1959,11 +1959,11 @@ body {
   text-align: inherit
 }
 
-.richText h2 {
+.richText h1 {
   font-size: 2em
 }
 
-.richText h2,
+.richText h1,
 .richText h3 {
   display: block;
   font-weight: 700;
