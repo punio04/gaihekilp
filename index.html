@@ -13,7 +13,7 @@
   <!-- OGP設定 -->
   <meta property="og:title" content="壁画アート×謎解きで観光促進！ | ハレガケ×NOMAL ARTCOMPANY">
   <meta property="og:description" content="壁画アートと謎解きを組み合わせた新しい観光促進サービス。地域の魅力を最大限に引き出します！">
-  <meta property="og:image" content="https://punio04.github.io/gaihekilp/img/ogp.jpg">
+  <meta property="og:image" content="https://punio04.github.io/gaihekilp/img/ogp.jpg?v=2">
   <meta property="og:url" content="https://punio04.github.io/gaihekilp/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -142,7 +142,8 @@
               </div>
             </li>
             <li data-s-ec63e3ea-597c-4def-9199-5ffdbcabbd87="" class="sd"><img
-                data-s-6a0717ca-cb9e-461e-ad71-7795b82df971="" class="sd" alt="他と上手く差別化できず、埋もれてしまっている図" src="img/worry_icon02.png">
+                data-s-6a0717ca-cb9e-461e-ad71-7795b82df971="" class="sd" alt="他と上手く差別化できず、埋もれてしまっている図"
+                src="img/worry_icon02.png">
               <div data-s-7f0c26e3-97c1-4eeb-aa89-c8426df76ded="" class="sd appear">
                 <ul data-s-93374f00-6f8b-4311-956f-2a50c3898ff7="" class="sd appear">
                   <li data-s-e675d1d1-efb6-44d6-9790-2ae80c79de06="" class="sd appear"><i
@@ -171,7 +172,8 @@
               </div>
             </li>
             <li data-s-ec63e3ea-597c-4def-9199-5ffdbcabbd87="" class="sd"><img
-                data-s-6a0717ca-cb9e-461e-ad71-7795b82df971="" class="sd" alt="リソースや運営面で自分たちだけでは不安がある図" src="img/worry_icon04.png">
+                data-s-6a0717ca-cb9e-461e-ad71-7795b82df971="" class="sd" alt="リソースや運営面で自分たちだけでは不安がある図"
+                src="img/worry_icon04.png">
               <div data-s-7f0c26e3-97c1-4eeb-aa89-c8426df76ded="" class="sd appear">
                 <ul data-s-93374f00-6f8b-4311-956f-2a50c3898ff7="" class="sd appear">
                   <li data-s-e675d1d1-efb6-44d6-9790-2ae80c79de06="" class="sd appear"><i
@@ -258,30 +260,26 @@
 
     <!-- プロジェクトの流れ pc -->
     <picture class="pc">
-      <img src="img/flow.webp" alt="プロジェクトの流れの図" width="375" height="500"
-        decoding="async" fetchpriority="high">
+      <img src="img/flow.webp" alt="プロジェクトの流れの図" width="375" height="500" decoding="async" fetchpriority="high">
     </picture>
 
     <!-- プロジェクトの流れ sp -->
     <picture class="sp">
       <source srcset="img/flow_sp02.webp" media="(max-width: 450px)" width="375" height="500" type="image/webp"><img
-        src="img/flow_sp.webp" alt="プロジェクトの流れの図" width="375" height="500"
-        decoding="async" fetchpriority="high">
+        src="img/flow_sp.webp" alt="プロジェクトの流れの図" width="375" height="500" decoding="async" fetchpriority="high">
     </picture>
 
     <!-- 壁画アート広告と周遊型謎解きのお客様の声 pc -->
     <picture class="pc">
-      <img
-        src="img/voice.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500"
-        decoding="async" fetchpriority="high">
+      <img src="img/voice.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500" decoding="async"
+        fetchpriority="high">
     </picture>
 
     <!-- 壁画アート広告と周遊型謎解きのお客様の声 sp -->
     <picture class="sp">
       <source srcset="img/voice_sp02.webp" media="(max-width: 450px)" width="375" height="500" type="image/webp">
-      <img
-        src="img/voice_sp.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500"
-        decoding="async" fetchpriority="high">
+      <img src="img/voice_sp.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500" decoding="async"
+        fetchpriority="high">
     </picture>
 
     <!-- よくある質問 -->
@@ -369,33 +367,33 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const accordions = document.querySelectorAll(".js-accordion-toggle");
+      const accordions = document.querySelectorAll(".js-accordion-toggle");
 
-        accordions.forEach((accordion) => {
-          accordion.addEventListener("click", function () {
-            // すべてのパネルを閉じる
-            document.querySelectorAll(".js-accordion-panel").forEach((panel) => {
-              if (panel !== this.nextElementSibling) {
-                panel.style.maxHeight = null;
-                panel.parentElement.classList.remove("__expand");
-                panel.previousElementSibling.classList.remove("active");
-              }
-            });
-
-            // クリックしたパネルを開閉
-            const panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
+      accordions.forEach((accordion) => {
+        accordion.addEventListener("click", function () {
+          // すべてのパネルを閉じる
+          document.querySelectorAll(".js-accordion-panel").forEach((panel) => {
+            if (panel !== this.nextElementSibling) {
               panel.style.maxHeight = null;
-              this.classList.remove("active");
               panel.parentElement.classList.remove("__expand");
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-              this.classList.add("active");
-              panel.parentElement.classList.add("__expand");
+              panel.previousElementSibling.classList.remove("active");
             }
           });
+
+          // クリックしたパネルを開閉
+          const panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            this.classList.remove("active");
+            panel.parentElement.classList.remove("__expand");
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            this.classList.add("active");
+            panel.parentElement.classList.add("__expand");
+          }
         });
       });
+    });
   </script>
 </body>
 
