@@ -32,6 +32,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <!-- スタイルシート -->
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Analytics 4 (GA4) -->
@@ -49,16 +50,15 @@
   <main id="main">
     <!-- ファーストビュー (FV) -->
     <section class="p-mv" id="mv">
-      <!-- 事前読み込み (LCP 対策) -->
-      <link rel="preload" as="image" href="img/fv.webp" type="image/webp">
-
+      <!-- 事前読み込み (LCP対策) -->
+      <link rel="preload" as="image" href="img/fv.webp" type="image/webp" media="(min-width: 769px)">
+      <link rel="preload" as="image" href="img/fv_sp.webp" type="image/webp" media="(max-width: 768px)">
       <picture>
         <!-- モバイル用画像 -->
         <source srcset="img/fv_sp.webp" media="(max-width: 768px)" width="375" height="500" type="image/webp">
         <!-- デスクトップ用画像 -->
-        <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="1200" height="630" decoding="async" fetchpriority="high">
+        <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="100%" height="auto" decoding="async" loading="eager">
       </picture>
-
       <a href="https://nazotoki-plus.com/contact/" class="cta-button">
         <img src="img/mail_icon.png" alt="メールアイコン" class="icon">
         お問い合わせ<br>はこちら
@@ -367,27 +367,25 @@
       </div>
     </div>
   </main>
-
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const accordions = document.querySelectorAll(".js-accordion-toggle");
-
-      accordions.forEach((accordion) => {
+      document.querySelectorAll(".js-accordion-toggle").forEach((accordion) => {
         accordion.addEventListener("click", function () {
-          // すべてのパネルを閉じる
-          document.querySelectorAll(".js-accordion-panel").forEach((panel) => {
-            if (panel !== this.nextElementSibling) {
-              panel.style.maxHeight = null;
-              panel.parentElement.classList.remove("__expand");
-              panel.previousElementSibling.classList.remove("active");
+          const panel = this.nextElementSibling;
+          const isOpen = panel.style.maxHeight;
+
+          // 全てのパネルを閉じる（開いているもののみ）
+          document.querySelectorAll(".js-accordion-panel").forEach((p) => {
+            if (p !== panel && p.style.maxHeight) {
+              p.style.removeProperty("max-height");
+              p.parentElement.classList.remove("__expand");
+              p.previousElementSibling.classList.remove("active");
             }
           });
 
           // クリックしたパネルを開閉
-          const panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
+          if (isOpen) {
+            panel.style.removeProperty("max-height");
             this.classList.remove("active");
             panel.parentElement.classList.remove("__expand");
           } else {
@@ -401,29 +399,28 @@
   </script>
   <!-- FAQ構造化データ -->
   <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "イベント費用はどれくらいになりますか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "開催の規模、デザインなどの内容により費用が大きく変わりますのでお見積りさせていただきます。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "発注から開催までの期間はどのくらいかかりますか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "内容にもよりますが３ヶ月程度お時間をいただいております。"
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Q: イベント費用はどれくらいになりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "開催の規模、デザインなどの内容により費用が大きく変わりますのでお見積りさせていただきます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Q: 発注から開催までの期間はどのくらいかかりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "内容にもよりますが3ヶ月程度お時間をいただいております。"
+        }
       }
-    </script>
+    ]
+  }
+  </script>
 </body>
-
 </html>
