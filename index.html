@@ -31,7 +31,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <!-- スタイルシート（非同期読み込み） -->
+  <!-- スタイルシート -->
  <link rel="stylesheet" href="style.css">
 
   <!-- jQueryの遅延読み込み -->
@@ -50,12 +50,18 @@
 
 <body class="p_top animation_true no_touchDevise ready" style="overflow: auto;">
   <main id="main">
-    <!-- FV -->
+    <!-- ファーストビュー (FV) -->
     <section class="p-mv" id="mv">
+      <!-- 事前読み込み (LCP 対策) -->
+      <link rel="preload" as="image" href="img/fv.webp" type="image/webp">
+    
       <picture>
+        <!-- モバイル用画像 -->
         <source srcset="img/fv_sp.webp" media="(max-width: 768px)" width="375" height="500" type="image/webp">
-        <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="375" height="500" decoding="async" fetchpriority="high">
+        <!-- デスクトップ用画像 -->
+        <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="1200" height="630" decoding="async" fetchpriority="high">
       </picture>
+    
       <a href="https://nazotoki-plus.com/contact/" class="cta-button">
         <img src="img/mail_icon.png" alt="メールアイコン" class="icon">
         お問い合わせ<br>はこちら
