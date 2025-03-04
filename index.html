@@ -50,8 +50,9 @@
   <main id="main">
     <!-- ファーストビュー (FV) -->
     <section class="p-mv" id="mv">
-      <!-- 事前読み込み (LCP対策) -->
-      <link rel="preload" as="image" href="img/fv.webp" type="image/webp">
+      <!-- スマホ用画像も事前読み込み (LCP 対策) -->
+      <link rel="preload" as="image" href="img/fv_sp.webp" type="image/webp" media="(max-width: 768px)">
+      <link rel="preload" as="image" href="img/fv.webp" type="image/webp" media="(min-width: 769px)">
     
       <picture>
         <!-- モバイル用画像 -->
