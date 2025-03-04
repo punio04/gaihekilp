@@ -10,14 +10,13 @@
   <meta name="description" content="巨大アートと謎解きを組み合わせて観光地を活性化！地域に人を呼び込み、楽しみながら街を巡る新しいサービス。株式会社ハレガケが提供する魅力的な企画をご紹介します。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://example.com/" />
-
   <meta http-equiv="Cache-Control" content="max-age=31536000">
 
   <!-- OGP設定 -->
   <meta property="og:site_name" content="ハレガケ×NOMAL ARTCOMPANY公式サイト">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:title" content="壁画アート×謎解きで観光活性化！">
-  <meta property="og:description" content="巨大アートと謎解きが融合した、新しい地域活性化のカタチ。株式会社ハルグが提供するユニークな観光コンテンツ！">
+  <meta property="og:description" content="巨大アートと謎解きが融合した、新しい地域活性化のカタチ。株式会社ハレガケが提供するユニークな観光コンテンツ！">
   <meta property="og:image" content="https://example.com/ogp-image.jpg">
   <meta property="og:url" content="https://example.com">
   <meta property="og:type" content="website">
@@ -27,18 +26,19 @@
   <meta name="twitter:image" content="https://example.com/ogp-image.jpg">
 
   <!-- ファビコン -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" href="img/favicon.ico?v=2" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=2">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+  <!-- スタイルシート（非同期読み込み） -->
+ <link rel="stylesheet" href="style.css">
 
-  <!-- スタイルシートとスクリプト -->
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQueryの遅延読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KV3K17YBC2"></script>
+  <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-KV3K17YBC2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -62,10 +62,6 @@
         <img src="img/under_icon.png" alt="下矢印アイコン" class="icon">
       </a>
     </section>
-
-
-
-
     <!-- 壁画アート×謎解きで地域の魅力を最大化する新サービス -->
     <section class="p-about l-section" id="a-about">
       <div class="l-inner">
@@ -88,7 +84,6 @@
         </div>
       </div>
     </section>
-
     <!-- ロゴ -->
     <section class="clients">
       <div class="l-inner">
@@ -100,12 +95,12 @@
           </div>
           <div class="clients__logos-wrapper">
             <div class="clients__logos">
-              <img src="img/tokyu.png" alt="TOKYU">
-              <img src="img/hiap.png" alt="HIAP">
-              <img src="img/sunshine.png" alt="Sunshine Aquarium">
-              <img src="img/takashimaya.png" alt="Takashimaya">
-              <img src="img/sanrio.png" alt="Sanrio">
-              <img src="img/namco.svg" alt="Namco">
+              <img src="img/tokyu.png" alt="TOKYU" width="120" height="60" loading="lazy">
+              <img src="img/hiap.png" alt="HIAP" width="120" height="60" loading="lazy">
+              <img src="img/sunshine.png" alt="Sunshine Aquarium" width="120" height="60" loading="lazy">
+              <img src="img/takashimaya.png" alt="Takashimaya" width="120" height="60" loading="lazy">
+              <img src="img/sanrio.png" alt="Sanrio" width="120" height="60" loading="lazy">
+              <img src="img/namco.svg" alt="Namco" width="120" height="60" loading="lazy">
             </div>
           </div>
         </div>
@@ -118,18 +113,17 @@
           </div>
           <div class="clients__logos-wrapper">
             <div class="clients__logos">
-              <img src="img/keio.svg" alt="KEIO">
-              <img src="img/Meiji.png" alt="Meiji">
-              <img src="img/jr.avif" alt="JR">
-              <img src="img/tokyo.avif" alt="Tokyo">
-              <img src="img/yahoo.svg" alt="Yahoo Japan">
-              <img src="img/panasonic.svg" alt="Panasonic">
+              <img src="img/keio.svg" alt="KEIO" width="120" height="60" loading="lazy">
+              <img src="img/Meiji.png" alt="Meiji" width="120" height="60" loading="lazy">
+              <img src="img/jr.avif" alt="JR" width="120" height="60" loading="lazy">
+              <img src="img/tokyo.avif" alt="Tokyo" width="120" height="60" loading="lazy">
+              <img src="img/yahoo.svg" alt="Yahoo Japan" width="120" height="60" loading="lazy">
+              <img src="img/panasonic.svg" alt="Panasonic" width="120" height="60" loading="lazy">
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- こんなお悩みありませんか？ -->
     <section data-s-dfd65a09-e748-4ab8-af95-ca0a8f391f2a="" class="sd appear">
       <div data-s-773f96d3-349f-40e1-8cd4-32d8aa868ccc="" class="sd appear">
@@ -140,7 +134,7 @@
           <ul data-s-4d4ad139-9407-487e-b484-eb58d98e8540="" class="sd appear">
             <li data-s-d3ad82f5-fbf6-4c9c-99ca-9e38a5553866="" class="sd"><img
                 data-s-04b7e5a7-89d3-4829-b441-2c684e8d535e="" class="sd" alt="イベントを通じて愛着を持ってもらいたい図"
-                src="img/worry_icon01.png">
+                src="img/worry_icon01.png" width="100" height="100" loading="lazy">
               <div data-s-2af0d7bd-e142-4d7b-8a42-f868d02203da="" class="sd appear">
                 <ul data-s-f74c4d4f-fc48-465c-bc49-482cbae72c84="" class="sd appear">
                   <li data-s-d48b032a-67a5-49f4-9294-783568e167c9="" class="sd appear"><i
@@ -154,7 +148,7 @@
             </li>
             <li data-s-ec63e3ea-597c-4def-9199-5ffdbcabbd87="" class="sd"><img
                 data-s-6a0717ca-cb9e-461e-ad71-7795b82df971="" class="sd" alt="他と上手く差別化できず、埋もれてしまっている図"
-                src="img/worry_icon02.png">
+                src="img/worry_icon02.png" width="100" height="100" loading="lazy">
               <div data-s-7f0c26e3-97c1-4eeb-aa89-c8426df76ded="" class="sd appear">
                 <ul data-s-93374f00-6f8b-4311-956f-2a50c3898ff7="" class="sd appear">
                   <li data-s-e675d1d1-efb6-44d6-9790-2ae80c79de06="" class="sd appear"><i
@@ -170,7 +164,7 @@
           <ul data-s-4d4ad139-9407-487e-b484-eb58d98e8540="" class="sd appear">
             <li data-s-d3ad82f5-fbf6-4c9c-99ca-9e38a5553866="" class="sd"><img
                 data-s-04b7e5a7-89d3-4829-b441-2c684e8d535e="" class="sd" alt="人が来る仕組みを作りたい図"
-                src="img/worry_icon03.png">
+                src="img/worry_icon03.png" width="100" height="100" loading="lazy">
               <div data-s-2af0d7bd-e142-4d7b-8a42-f868d02203da="" class="sd appear">
                 <ul data-s-f74c4d4f-fc48-465c-bc49-482cbae72c84="" class="sd appear">
                   <li data-s-d48b032a-67a5-49f4-9294-783568e167c9="" class="sd appear"><i
@@ -184,7 +178,7 @@
             </li>
             <li data-s-ec63e3ea-597c-4def-9199-5ffdbcabbd87="" class="sd"><img
                 data-s-6a0717ca-cb9e-461e-ad71-7795b82df971="" class="sd" alt="リソースや運営面で自分たちだけでは不安がある図"
-                src="img/worry_icon04.png">
+                src="img/worry_icon04.png" width="100" height="100" loading="lazy">
               <div data-s-7f0c26e3-97c1-4eeb-aa89-c8426df76ded="" class="sd appear">
                 <ul data-s-93374f00-6f8b-4311-956f-2a50c3898ff7="" class="sd appear">
                   <li data-s-e675d1d1-efb6-44d6-9790-2ae80c79de06="" class="sd appear"><i
@@ -200,7 +194,6 @@
         </div>
       </div>
     </section>
-
     <!--メリット-->
     <section data-s-add87fdb-1bff-4ac1-b2d7-f6bff73e78de="" class="sd appear">
       <div data-s-686024c8-721b-48c3-8111-f7b6379b2bee="" class="sd appear">
@@ -211,7 +204,7 @@
           <div data-s-8ff3fdad-e58e-43bf-952a-e38595e21e7c="" class="sd appear">
             <div data-s-c7044f22-e9b6-4aa5-b02a-b7944685d2c6="" class="sd appear"><img
                 data-s-5fbcf82b-4e4a-4238-bfab-28591e9a82e7="" class="sd" alt="制作風景が注目を集め宣伝になる図"
-                src="img/merit_icon01.png">
+                src="img/merit_icon01.png" width="100" height="100" loading="lazy">
               <div data-s-e5f2bb1c-b57f-4b15-be8e-8d4b9822efbc="" class="richText sd">
                 <h3 data-uid="2eURsQTj" data-time="" id="index_2eURsQTj">約1週間の屋外制作で<br>
                   500名以上が撮影！<br>
@@ -220,7 +213,7 @@
             </div>
             <div data-s-ab2bfadf-9a8f-4b93-857a-5ffeb73e3b23="" class="sd appear"><img
                 data-s-e8092b60-c9d1-47c2-a2f8-2cf055084885="" class="sd" alt="観光客が地域内を歩き回る仕掛けを作る図"
-                src="img/merit_icon02.png">
+                src="img/merit_icon02.png" width="100" height="100" loading="lazy">
               <div data-s-acd48404-3e1b-4bec-b675-5533b4f8e8e7="" class="richText sd">
                 <h3 data-uid="2eURsQTj" data-time="" id="index_2eURsQTj">
                   謎解きルートを壁画アートで<br class="sp">つなぐことで、<br class="pc">観光客が地域内を<br>歩き回る仕掛けを作る。</h3>
@@ -230,7 +223,7 @@
           <div data-s-8ff3fdad-e58e-43bf-952a-e38595e21e7c="" class="sd appear">
             <div data-s-c7044f22-e9b6-4aa5-b02a-b7944685d2c6="" class="sd appear"><img
                 data-s-5fbcf82b-4e4a-4238-bfab-28591e9a82e7="" class="sd" alt="制作風景が注目を集め宣伝になる図"
-                src="img/merit_icon03.png">
+                src="img/merit_icon03.png" width="100" height="100" loading="lazy">
               <div data-s-e5f2bb1c-b57f-4b15-be8e-8d4b9822efbc="" class="richText sd">
                 <h3 data-uid="2eURsQTj" data-time="" id="index_2eURsQTj">体験型のイベントを楽しみながら
                   <br>写真を撮ることで、<br>参加者自らがプロモーターとなる。
@@ -239,7 +232,7 @@
             </div>
             <div data-s-ab2bfadf-9a8f-4b93-857a-5ffeb73e3b23="" class="sd appear"><img
                 data-s-e8092b60-c9d1-47c2-a2f8-2cf055084885="" class="sd" alt="観光客が地域内を歩き回る仕掛けを作る図"
-                src="img/merit_icon04.png">
+                src="img/merit_icon04.png" width="100" height="100" loading="lazy">
               <div data-s-acd48404-3e1b-4bec-b675-5533b4f8e8e7="" class="richText sd">
                 <h3 data-uid="2eURsQTj" data-time="" id="index_2eURsQTj">壁画アートが謎解きの要素として<br>
                   活用されることで、<br>
@@ -261,7 +254,6 @@
             <a href="https://nazotoki-plus.com/contact/">お問い合わせはこちら</a>
             <!--.cv_btn01-->
           </div>
-
           <!--.cv_btnArea-->
         </div>
         <!--.inner-->
@@ -271,26 +263,25 @@
 
     <!-- プロジェクトの流れ pc -->
     <picture class="pc">
-      <img src="img/flow.webp" alt="プロジェクトの流れの図" width="375" height="500" decoding="async" fetchpriority="high">
+      <img src="img/flow.webp" alt="プロジェクトの流れの図" width="375" height="500" decoding="async" loading="lazy">
     </picture>
 
     <!-- プロジェクトの流れ sp -->
     <picture class="sp">
       <source srcset="img/flow_sp02.webp" media="(max-width: 450px)" width="375" height="500" type="image/webp"><img
-        src="img/flow_sp.webp" alt="プロジェクトの流れの図" width="375" height="500" decoding="async" fetchpriority="high">
+        src="img/flow_sp.webp" alt="プロジェクトの流れの図" width="375" height="500" decoding="async" loading="lazy">
     </picture>
 
     <!-- 壁画アート広告と周遊型謎解きのお客様の声 pc -->
     <picture class="pc">
       <img src="img/voice.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500" decoding="async"
-        fetchpriority="high">
+        loading="lazy">
     </picture>
 
     <!-- 壁画アート広告と周遊型謎解きのお客様の声 sp -->
     <picture class="sp">
       <source srcset="img/voice_sp02.webp" media="(max-width: 450px)" width="375" height="500" type="image/webp">
-      <img src="img/voice_sp.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500" decoding="async"
-        fetchpriority="high">
+      <img src="img/voice_sp.webp" alt="壁画アート広告と周遊型謎解きのお客様の声" width="375" height="500" decoding="async" loading="lazy">
     </picture>
 
     <!-- よくある質問 -->
