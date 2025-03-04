@@ -34,6 +34,21 @@
   <!-- スタイルシート -->
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .p-mv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+  </style>
 
   <!-- Google Analytics 4 (GA4) -->
   <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-KV3K17YBC2"></script>
@@ -43,6 +58,9 @@
     gtag('js', new Date());
     gtag('config', 'G-KV3K17YBC2');
   </script>
+
+  <link rel="preload" as="image" href="img/fv_sp.webp" type="image/webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="img/fv.webp" type="image/webp" media="(min-width: 769px)">
 </head>
 
 
@@ -53,14 +71,14 @@
       <!-- スマホ用画像も事前読み込み (LCP 対策) -->
       <link rel="preload" as="image" href="img/fv_sp.webp" type="image/webp" media="(max-width: 768px)">
       <link rel="preload" as="image" href="img/fv.webp" type="image/webp" media="(min-width: 769px)">
-    
+
       <picture>
         <!-- モバイル用画像 -->
         <source srcset="img/fv_sp.webp" media="(max-width: 768px)" width="375" height="500" type="image/webp">
         <!-- デスクトップ用画像 -->
         <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="1200" height="630" decoding="async" loading="eager">
       </picture>
-    
+
       <a href="https://nazotoki-plus.com/contact/" class="cta-button">
         <img src="img/mail_icon.png" alt="メールアイコン" class="icon">
         お問い合わせ<br>はこちら
@@ -424,5 +442,18 @@
     ]
   }
   </script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      const accordions = document.querySelectorAll(".js-accordion-toggle");
+      accordions.forEach((accordion) => {
+        accordion.addEventListener("click", function () {
+          const panel = this.nextElementSibling;
+          panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+          this.classList.toggle("active");
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>
