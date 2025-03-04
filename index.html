@@ -52,16 +52,12 @@
 
 <body class="p_top animation_true no_touchDevise ready" style="overflow: auto;">
   <main id="main">
-    <!-- ファーストビュー (FV) -->
+    <!-- FV -->
     <section class="p-mv" id="mv">
-      <!-- スマホ用画像も事前読み込み (LCP 対策) -->
-      <link rel="preload" as="image" href="img/fv_sp.webp" type="image/webp" media="(max-width: 768px)">
-      <link rel="preload" as="image" href="img/fv.webp" type="image/webp" media="(min-width: 769px)">
+      <link rel="preload" as="image" href="img/fv.webp" type="image/webp">
       <picture>
-        <!-- モバイル用画像 -->
-        <source srcset="img/fv_sp.webp" media="(max-width: 768px)" width="375" height="500" type="image/webp" loading="lazy">
-        <!-- デスクトップ用画像 -->
-        <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high">
+        <source srcset="img/fv_sp.webp" media="(max-width: 768px)" width="375" height="500" type="image/webp">
+        <img src="img/fv.webp" alt="壁画アート×謎解きで観光促進！" width="1200" height="630" decoding="async" fetchpriority="high">
       </picture>
       <a href="https://nazotoki-plus.com/contact/" class="cta-button">
         <img src="img/mail_icon.png" alt="メールアイコン" class="icon">
