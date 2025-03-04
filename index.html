@@ -37,7 +37,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: auto;
     }
 
     .cta-button {
@@ -393,25 +393,29 @@
 
       accordions.forEach((accordion) => {
         accordion.addEventListener("click", function () {
-          // すべてのパネルを閉じる
-          document.querySelectorAll(".js-accordion-panel").forEach((panel) => {
-            if (panel !== this.nextElementSibling) {
-              panel.style.maxHeight = null;
-              panel.parentElement.classList.remove("__expand");
-              panel.previousElementSibling.classList.remove("active");
-            }
-          });
-
-          // クリックしたパネルを開閉
           const panel = this.nextElementSibling;
+
+          if (!panel || !panel.classList.contains("js-accordion-panel")) {
+            console.error("パネルが見つからない");
+            return;
+          }
+
+          // すでに開いてるなら閉じる
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
             this.classList.remove("active");
-            panel.parentElement.classList.remove("__expand");
           } else {
+            // 他のパネルを閉じる処理を追加
+            document.querySelectorAll(".js-accordion-panel").forEach((p) => {
+              if (p !== panel) {
+                p.style.maxHeight = null;
+                p.previousElementSibling.classList.remove("active");
+              }
+            });
+
+            // クリックしたパネルを開く
             panel.style.maxHeight = panel.scrollHeight + "px";
             this.classList.add("active");
-            panel.parentElement.classList.add("__expand");
           }
         });
       });
@@ -441,18 +445,6 @@
       }
     ]
   }
-  </script>
-  <script defer>
-    document.addEventListener("DOMContentLoaded", function () {
-      const accordions = document.querySelectorAll(".js-accordion-toggle");
-      accordions.forEach((accordion) => {
-        accordion.addEventListener("click", function () {
-          const panel = this.nextElementSibling;
-          panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
-          this.classList.toggle("active");
-        });
-      });
-    });
   </script>
 </body>
 
